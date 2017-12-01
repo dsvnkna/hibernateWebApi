@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+    <class
+            name="database.Test"
+            table="WomanSafety.questions">
+        <id
+                name="id"
+                column="id_question">
+            <generator class="increment"/>
+        </id>
+        <property
+                name="question"
+                column="question"/>
+        <property
+                name="points"
+                column="points"/>
+    </class>
+</hibernate-mapping>
